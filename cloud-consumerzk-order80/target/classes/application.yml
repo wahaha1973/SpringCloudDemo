@@ -1,0 +1,11 @@
+#8000表示注册到zookeeper服务器的支付服务提供者端口号
+server:
+  port: 8000
+#服务别名----注册zookeeper到注册中心名称
+spring:
+  application:
+    name: cloud-consumer-order
+  cloud:
+    #注册到zookeeper地址
+    zookeeper:
+      connect-string: 121.196.150.226:2181
